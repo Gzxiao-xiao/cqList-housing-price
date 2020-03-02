@@ -1,0 +1,7 @@
+van-row {
+  text-align: center;
+} 
+van-tabs{
+  height: 100%!important;
+  line-height: 80rpx; 
+}

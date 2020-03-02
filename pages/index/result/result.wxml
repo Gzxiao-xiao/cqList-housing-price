@@ -1,0 +1,8 @@
+<button bindtap="xs">显示搜索结果</button>
+<view  class="item" wx:for="{{newsList}}" wx:key="{{index}}">
+<button >
+<view >{{item.projectname}}</view>
+<view >{{item.enterprisename}}</view>
+<view >{{item.location}}</view>
+</button>
+</view>

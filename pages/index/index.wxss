@@ -1,0 +1,48 @@
+page{
+  padding-top: 50rpx;
+}
+.container1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+} 
+.buttonwxss{
+    padding: 10rpx 22rpx;
+    font-size: 15px;
+    display: inline-block;
+}
+.nav{
+  white-space:nowrap;
+  padding:5rpx 0;
+}
+.input{
+ float: left;
+ width: 500rpx;
+ height: 70rpx;
+ font-size: 35rpx;
+ background-color: white;
+}
+.button-hover {
+ background-color: red;
+}
+.search{
+ float: left;
+ width: 130rpx;
+ height: 70rpx;
+ margin-left: 0;
+ background-color: rgb(18, 206, 190);
+ font-size: 28rpx;
+ color: #fff;
+ border: none;
+}
+.search-view{
+ position: relative;
+ overflow: hidden;
+ height: 70rpx;
+ padding: 20rpx 20rpx 25rpx 60rpx;
+ background-color: rgb(255, 255, 255);
+}

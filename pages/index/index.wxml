@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<van-tabs type="card" animated>
+  <van-tab title="楼盘">
+   <view class='search-view'>
+  <input class='input' confirm-type="search" maxlength="30" bindinput='wxSearchInput' value='{{keyword}}' bindconfirm='wxSearchFn' bindfocus="wxSerchFocus" bindblur="wxSearchBlur" placeholder='请输入搜索内容'></input>
+  <button class='search' bindtap="wxSearchFn" hover-class='button-hover'>搜索</button>
+</view>
+  </van-tab>
+  <van-tab title="找房">
+    <van-search placeholder="找房" value="{{cqlist}}" />
+  </van-tab>
+  <van-tab title="热门楼盘">
+    <text>广告位招租广告位招租广告位招租广告位招租广告位招租</text>
+  </van-tab>
+</van-tabs>
+<view class="container1">
+<scroll-view class="nav" scroll-x>
+<button bindtap="activeNav" data-string='yz' class="buttonwxss ">渝中区</button>
+<button bindtap="activeNav" data-string='jb'class="buttonwxss ">江北区</button>
+<button bindtap="activeNav" data-string='yb'class="buttonwxss ">渝北区</button>
+<button bindtap="activeNav" data-string='na'class="buttonwxss ">南岸区</button>
+<button bindtap="activeNav" data-string='spb'class="buttonwxss ">沙坪坝区</button>
+<button bindtap="activeNav" data-string='bb'class="buttonwxss ">北碚区</button>
+<button bindtap="activeNav" data-string='ddk'class="buttonwxss ">大渡口区</button>
+<button bindtap="activeNav" data-string='jlp'class="buttonwxss ">九龙坡区</button>
+<button bindtap="activeNav" data-string='lj'class="buttonwxss ">两江新区</button>
+<button bindtap="activeNav" data-string='bn'class="buttonwxss ">巴南区</button>
+</scroll-view>
+</view>
+<view  class="item" wx:for="{{cqList}}" wx:key="{{index}}">
+<button bindtap="gtnp" data-string="{{item.projectid}}">
+<view >{{item.projectname}}</view>
+<view >{{item.enterprisename}}</view>
+<view >{{item.location}}</view>
+</button>
+</view>

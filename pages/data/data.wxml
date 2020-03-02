@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<van-tabs active="a">
+  <van-tab title="今日网签" name="a">
+    <van-row gutter="40">
+      <van-col span="8">项目名称</van-col>
+      <van-col span="8">今日网签/套</van-col>
+      <van-col span="8">区域</van-col>
+    </van-row>
+    <van-row gutter="40">
+      <van-col span="8">昱湖1号</van-col>
+      <van-col span="8">36</van-col>
+      <van-col span="8">渝北区</van-col>
+    </van-row>
+  </van-tab>
+  <van-tab title="房价趋势" name="b">房价趋势</van-tab>
+  <van-tab title="预定数据" name="c">预定数据</van-tab>
+  <van-tab title="七日去化率" name="d">七日去化率</van-tab>
+</van-tabs>

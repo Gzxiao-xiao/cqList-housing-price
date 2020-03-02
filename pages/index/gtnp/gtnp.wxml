@@ -1,0 +1,30 @@
+<van-tabs type="card" animated>
+  <van-tab title="楼盘">
+    <van-search placeholder="楼盘" value="{{cqlist}}" />
+  </van-tab>
+  <van-tab title="找房">
+    <van-search placeholder="找房" value="{{cqlist}}" />
+  </van-tab>
+  <van-tab title="热门楼盘">
+    <text>广告位招租广告位招租广告位招租广告位招租广告位招租</text>
+  </van-tab>
+</van-tabs>
+<view wx:for="{{cqList}}" wx:key="{{index}}" >
+<button bindtap="gtnpp"  data-string="{{item.buildingid}}">
+<view>{{item.blockname}}</view>
+</button>
+<view hidden='{{isShow}}' wx:for="{{arr}}" wx:key="{{index}}">
+<button class="ceng" bindtap="changeTogglee" style="transform:rotate({{isShoww}})">
+{{item.y}}-{{item.flr}}-{{item.rn}}
+</button>
+<view hidden='{{isShoww}}'>
+<view>结构:{{item.stru}}</view>
+<view>户型:{{item.rytpe}}</view>
+<view>使用用途:{{item.use_}}</view>
+<view>建筑面积:{{item.bArea}}</view>
+<view>套内面积:{{item.iArea}}</view>
+<view>拟售单价（套内）:{{item.nsjg}}</view>
+<view>拟售单价（建面）:{{item.nsjmjg}}</view>
+</view>
+</view>
+</view>
